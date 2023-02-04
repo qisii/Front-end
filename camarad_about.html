@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="c_style.css">
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="camarad_home.html"><img src="logo.png" class="logo"></a>
+  <a href="camarad_home.html" class="link">Home</a>
+  <a href="camarad_about.html" class="link active1">About Us</a>
+  <button class="dropdown-btn">Tribes 
+    <img src="sort-down.png" class="dropdown-icon">
+  </button>
+  <div class="dropdown-container">
+    <a href="b'laan.html">B'laan</a>
+    <a href="bagobo.html">Bagobo</a>
+    <a href="bukidnon.html">Bukidnon</a>
+    <a href="higaonon.html">Higaonon</a>
+    <a href="manobo.html">Manobo</a>
+    <a href="mansaka.html">Mansaka</a>
+    <a href="maranao.html">Maranao</a>
+    <a href="subanen.html">Subanen</a>
+    <a href="tboli.html">T'boli</a>
+    <!--<a href="tagakaulo.html">Tagakaulo</a>-->
+  </div>
+  <a href="camarad_contact.html" class="link">Contact</a>
+</div>
+
+<div class="about">
+  <h1 class="webName">Camarad</h1>
+  <p class="about1">"Ang kultura ang espirito ng isang lipunan"</p>
+</div>
+
+<video class="teaser" controls>
+  <source src="CAMARAD.mp4" type="video/mp4">
+  <source src="CAMARAD.ogg" type="video/ogg">
+</video>
+
+<div>
+  <img src="question.png" class="icon_about">
+  <h3 class="about2">About Us</h3>
+  <p class="about3">This website was designed and created by the 'Ayo' who are now graduating students in STI Iligan.</p>
+  <p class="about3">This website is for educational purpose to add up some knowledge towards people about the remaining tribes of Mindanao.</p>
+</div>
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+</body>
+</html> 

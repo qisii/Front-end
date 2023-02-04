@@ -1,0 +1,279 @@
+@chartset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Century Gothic", sans-serif;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #FFFEFE;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 10px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn{
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #0C6161;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  font-family: "Century Gothic", sans-serif;
+}
+
+.end{
+  padding-bottom: 30px;
+}
+
+.dropdown-container a{
+  padding: 5px 7px 5px 10px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #0C6161;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.logo{
+  width: 130px;
+  height: 130px;
+  margin-left: 19px;
+  margin-bottom: 30px;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+.active1 {
+  font-weight: bold;
+  border-left: 4px solid white;
+}
+
+.dropdown-icon{
+  width: 12px;
+  height: 12px;
+  float: right;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+/* Main content */
+.webName {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  text-align: center;
+  font-size: 60px; /* Increased text to enable scrolling */
+  color: #0C6161;
+}
+
+.about1{
+  margin-left: 200px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.about2{
+  margin-left: 200px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.about2::first-letter{
+  color: #0C6161;
+}
+
+.icon_about{
+  margin-left: 750px;
+  padding-top: 50px;
+}
+
+.icon1_about{
+	margin-left: 10px;
+	height: 43px;
+	width: 50px;
+}
+
+.about3{
+  width: 500px;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 520px;
+}
+
+.teaser{
+  width: 870px;
+  height: 500px;
+  margin-left: 340px;
+}
+
+.title{
+  font-size: 60px;
+  margin-left: 200px;
+  text-align: center;
+}
+
+.title::first-letter, .title2::first-letter, .title3::first-letter{
+  color: #0C6161;
+}
+
+.title2{
+  margin-left: 240px;
+  text-align: left;
+  font-size: 30px;
+  padding-left: 50px;
+}
+
+.tribes_pic{
+  margin-left: 200px;
+  width: 1135px;
+  height: 500px;
+}
+
+.content{
+  margin-left: 240px;
+  width: 1000px;
+  padding-left: 50px;
+  text-align: justify;
+}
+
+.pic{
+  margin-left: 200px;
+  height: 655px;
+  width: 1135px;
+  padding: 0px;
+  border-radius: 13px;
+}
+
+.pic1{
+  margin-left: 200px;
+  height: 350px;
+  width: 1135px;
+  padding: 0px;
+}
+
+.divCont{
+  margin-left: 200px;
+}
+
+.form-control{
+  /*width: 500px;*/
+  width: 370px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid black;
+  color: #3A9378;
+  font-size: 16px;
+  margin-left: 80px;
+  display: block;
+  font-family: "Century Gothic", sans-serif;
+}
+
+
+.column1 {
+  float: left;
+  margin: 10px;
+  /*width: 32.27%;*/
+  width: 47.5%;
+  padding: 6px;
+  height: 370px;
+  color: black;
+  letter-spacing: 3px;
+  border: solid #3A9378 1px;
+}
+
+.phoneNum{
+  text-align: center;
+}
+
+.social_icon{
+  margin-left: 200px;
+}
+
+.title3{
+  text-align: center;
+}
+
+.button1 {
+  background-color: #3A9378;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  margin-left: 200px;
+}
+
+.button1 {border-radius: 5px;}
+
+.invalid_email{
+  text-align: left;
+  padding-left: 80px;
+  color: red;
+  font-size: 12px;
+}
+
+.invalid_name{
+  text-align: left;
+  padding-left: 80px;
+  color: red;
+  font-size: 12px;
+}
+
+.hidden{
+  display: none;
+}
+
+.display{
+  display: block;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: #0C6161;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

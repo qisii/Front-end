@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="c_style.css">
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="camarad_home.html"><img src="logo.png" class="logo"></a>
+  <a href="camarad_home.html" class="link active1">Home</a>
+  <a href="camarad_about.html" class="link">About Us</a>
+  <button class="dropdown-btn">Tribes 
+    <img src="sort-down.png" class="dropdown-icon">
+  </button>
+  <div class="dropdown-container">
+  	<a href="b'laan.html">B'laan</a>
+  	<a href="bagobo.html">Bagobo</a>
+  	<a href="bukidnon.html">Bukidnon</a>
+  	<a href="higaonon.html">Higaonon</a>
+    <a href="manobo.html">Manobo</a>
+    <a href="mansaka.html">Mansaka</a>
+    <a href="maranao.html">Maranao</a>
+    <a href="subanen.html">Subanen</a>
+    <a href="tboli.html">T'boli</a>
+    <!--<a href="tagakaulo.html">Tagakaulo</a>-->
+  </div>
+  <a href="camarad_contact.html" class="link">Contact</a>
+</div>
+
+<img src="froont1.jpg" class="pic">
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+</body>
+</html> 
