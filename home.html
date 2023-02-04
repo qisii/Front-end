@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ristò Diner & Cafe</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+
+<body>
+<div id="navbar">
+	<a href="home.html"><img src="asdf.png" id="logo" alt="dish" width="150px" height="50px"></a>
+	<a href="Caporte_LabAct2.html" class="linkref active1">Home</a>
+	<a href="about.html" class="linkref">About Me</a>
+	<a href="contacts.html" class="linkref">Contacts</a>
+</div>
+
+<div>
+	<img src="front5 (4).jpg" alt="resto" width="100%" height="100%"><!--height="970px"-->
+</div>
+
+<div class="row2">
+  	<div class="intro">
+    	<h1 style="color: #3A9378;">Welcome</h1>
+  	</div>
+  	<div class="intro">
+    	<h3>2019</h3>
+    	<p><b style="color: #3A9378">Ristò</b> is a modern diner & cafe that serves variety of foods that makes everyone statisfy and enjoy.
+    	It also nice for couple to dive in and even the whole family.</p>
+  	</div>
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+	<img src="slide7.jpg" style="width:100%;height:750px">
+	<div class="text">Simple</div>
+	<p class="text5">" Outstanding diner & cafe. Great quality without the prices of other diner of comparable quality. The staff is always pleasant as well "<br><br> -Chole Lucas</p>
+</div>
+
+<div class="mySlides fade">
+  	<img src="rest51 (1).jpg" style="width:100%;height:750px">
+  	<div class="text">Unique</div>
+  	<p class="text5">" Breakfast,brunch, lunch, dinner -- it's always good food and plenty of it. Every single item I have ordered off their menu has been perfect. It's clean, friendly and reasonably priced. What more could you ask for! "<br><br> -Madison Grace</p>
+</div>
+
+<div class="mySlides fade">
+  	<img src="slide71.jpg" style="width:100%;height:750px">
+  	<div class="text">Nature</div>
+  	<p class="text5">" The Ristò has the friendliest place and staff! They're very attentive and great at offering suggestions if you can't decide what to order. I'll definitely go back soon "<br><br> -Grayson Carter</p>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  	<span class="dot"></span> 
+  	<span class="dot"></span> 
+  	<span class="dot"></span> 
+</div>
+
+<script>
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  for (i = 0; i < slides.length; i++) {
+	    slides[i].style.display = "none";  
+	  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) {slideIndex = 1}    
+	  for (i = 0; i < dots.length; i++) {
+	    dots[i].className = dots[i]. className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	  setTimeout(showSlides, 3000);
+}
+</script>
+<!-- Photo Grid -->
+
+<div class="row3"> 
+  	<div class="column3">
+	    <img src="gall1.jpg" class="column31" style="width:100%">
+	    <img src="gall2.jpg" class="column31" style="width:100%">
+	    <img src="gall6.jpg" class="column31" style="width:100%">
+	    <img src="gall8.jpg" class="column31" style="width:100%">
+  	</div>
+  	<div class="column3">
+	    <img src="rest4.jpg" class="column31" style="width:100%">
+	    <img src="gall4.jpg" class="column31" style="width:100%">
+	    <img src="gall5.jpg" class="column31" style="width:100%">
+	</div>  
+</div>
+
+<div id="serviceIcon">
+	<img src="meal (3).png" alt="services" width="90px" height="70px">
+</div>
+<div class="services">
+	<h1>Our Services</h1>
+</div>
+
+<div class="row1">
+	<a href="menu_breakfast.html"><div id="icons"><img src="coffee-cup (3).png" alt="breakfast" width="90px" height="60px">
+		<p id="iconsdes">Breakfast</p>
+		<p id="iconsdes1">The beginning. It is the mouthful that is the commitment to a new day, a continuing life.</p>
+	</div></a>
+	<a href="menu_brunch.html"><div id="icons"><img src="salad (1).png" alt="brunch" width="90px" height="60px">
+		<p id="iconsdes">Brunch</p>
+		<p id="iconsdes1">Brunch is breakfast without an alarm clock. Accept the brunch you think you deserve.</p>
+	</div></a>
+	<a href="menu_lunch.html"><div id="icons"><img src="eat (1).png" alt="lunch" width="90px" height="60px">
+		<p id="iconsdes">Lunch</p>
+		<p id="iconsdes1">I know a great desk where you can have lunch today.Keep Calm and have lunch.</p>
+	</div></a>
+	<a href="menu_dinner.html"><div id="icons"><img src="dinner (2).png" alt="dinner" width="90px" height="60px">
+		<p id="iconsdes">Dinner</p>
+		<p id="iconsdes1">A successful dinner is one that lasts a while and one where everyone leaves happy.</p>
+	</div></a>
+</div>
+
+<footer class="footer">
+<!--<a href="https://www.facebook.com/ristoiligan/?modal=profile_completion&notify_field=blurb"><img src="abcd.png" class="social3" width="50px" height="40px"></a>
+	<a href="https://www.instagram.com/Risto.dev/"><img src="insta1.png" class="social3" width="50px" height="40px"></a>-->
+	<p id="footer1">HEALTHY FOOD . CASUAL FOOD</p>
+	<p id="footer2">&copy; 2019 Ristò Diner & Cafe</p>
+</footer>
+
+</body>
+</html>
+ooter1">HEALTHY FOOD . CASUAL FOOD</p>
+	<p id="footer2">&copy; 2019 Ristò Diner & Cafe</p>
+</footer>
+
+</body>
+</html>
